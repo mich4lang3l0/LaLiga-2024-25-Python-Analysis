@@ -1,46 +1,45 @@
 # ⚽ La Liga 24/25 Season Analysis | Python & Pandas
 
 ## 📌 Project Overview
-This project is an statistical analysis of last La Liga season. The main target was to check form, offensive efectivness and defensive stats. I've also tried to make some conclusions about advantage of home matches.
+This project provides a statistical analysis of the previous La Liga season (2024/2025). The main objective was to evaluate team form, offensive effectiveness, and defensive statistics. The project also investigates the hypothesis regarding the "Home Advantage" phenomenon.
 
-The project starts with **data preparation**, **Feature Engineering** and **Visualization**, also conclusions below the charts
+The workflow follows a standard data analysis process: starting with **Data Cleaning & Preparation**, moving through **Feature Engineering**, and concluding with **Exploratory Data Analysis (EDA)** and visualization.
 
 ## 🎯 Key insights
 Based on the analysis, the following conclusions has been made:
 1.  **FC Barcelona offensive dominance**
-    * Barcelona scored the most goals in the whole league.
-2.  **Shots and goals correlation**
-    * naliza wykazała silną korelację dodatnią. Drużyny z Top 4 (Barcelona, Real Madryt) cechują się wyższą skutecznością konwersji strzałów (znajdują się "nad kreską" trendu).
-3.  **Home Advantage (Przewaga własnego boiska):**
-    * [TUTAJ WPISZ WNIOSEK Z NOTATNIKA, np.: Analiza wykazała, że dla drużyn ze środka tabeli gra u siebie nie gwarantuje znaczącej przewagi punktowej w tym sezonie.]
-4.  **Analiza Formy (Rolling Average):**
-    * Wykres średniej kroczącej pokazuje dynamikę zdobywania punktów przez czołowe zespoły w czasie.
+    * Barcelona scored the highest number of goals in the league, maintaining a significant advantage over the runner-up, Real Madrid.
+2.  **Correlation between Shots & Goals:**
+   * A strong positive correlation exists between shots attempted and goals scored. Teams positioned above the trend line demonstrate higher finishing efficiency compared to the league average.
+3.  **Home Advantage Analysis:**
+    * The data suggests that playing at home does not guarantee a significant advantage for all teams. While some clubs perform better at home, others have secured more points in away matches.
+4.  **Form Analysis (Rolling Average):**
+    * The rolling average chart highlights the momentum of the top two clubs: FC Barcelona and Real Madrid. Both teams experienced a noticeable dip in form during the second quarter of the season.
 
 ## 🛠️ Użyte Technologie (Tech Stack)
-Projekt został zrealizowany w języku **Python 3.x** z wykorzystaniem bibliotek:
 
-* **Pandas & NumPy:** Manipulacja danymi, grupowanie (`groupby`), łączenie tabel (`merge`), operacje na datach.
-* **Matplotlib & Seaborn:** Data visualization.
-* **Jupyter Notebook:**
-
+* **Pandas & NumPy:** Data manipulation, grouping, statistical operations
+* **Matplotlib & Seaborn:** Data visualization
+* **Google Colab:** Development environment
 ## 📊 Visuals
 
 ### 1. League Table
-![League Table](images/table_overview.png)
+<img width="922" height="663" alt="league_table" src="https://github.com/user-attachments/assets/4972c9c1-52a6-4f88-a815-dbe688ef0b77" />
 
 ### 2. Correlation Matrix
-![Correlation Heatmap](images/correlation.png)
-*Badanie zależności między rzutami rożnymi, strzałami a wynikiem końcowym.*
+<img width="729" height="466" alt="correlation_matrix" src="https://github.com/user-attachments/assets/088dc89e-ef91-4216-9f38-7085ddf69be3" />
 
 ### 3. Teams' from over the season (Rolling Average)
-![Team Form](images/team_form.png)
+<img width="637" height="539" alt="barca_form" src="https://github.com/user-attachments/assets/b02a6108-4d92-4a4d-8781-2641def6494b" />
+<img width="637" height="540" alt="real_form" src="https://github.com/user-attachments/assets/2bca2da6-bb32-48b0-95cf-c27190b14172" />
+
 **
 
 
 ## 📂 Struktura Plików
-* `laliga2425.ipynb` - Główny notatnik z kodem, analizą i opisami.
-* `laliga2425.csv` - Zbiór danych (mecze, wyniki, statystyki).
-* `README.md` - Dokumentacja projektu.
+* `laliga2425.ipynb` - Main notepbok with code, analysis and visualisations
+* `laliga2425.csv` - Dataset (downloaded from github)
+* `README.md` - Project Documentation.
 
 ---
-*Autor: [Twoje Imię i Nazwisko]*
+*Created by Michał Węglorz*
